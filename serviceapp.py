@@ -2,23 +2,23 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.exc import IntegrityError
 
-# Create a Flask
+# створення Flask
 app = Flask(__name__)
 
-# Add Database
+# Додавання бази даних
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///users.db"
-# Initialize the Database
+# Ініціалізація бази даних
 db = SQLAlchemy(app)
 
 
-# Create Model
+# створення Model
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(30), nullable=False)
     surname = db.Column(db.String(30), nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
 
-    # function for return string after add user
+    # повернення рядка після додавання user-а
     def __repr__(self):
         return '<Name %r>' % self.id
 
