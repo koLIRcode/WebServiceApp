@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/kolir/work/CODE/EVO_PythonLab-22/WebService/WebService_app/virt"
+VIRTUAL_ENV="/kolir/work/CODE/GitHub_projects/WebService_app/virt"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

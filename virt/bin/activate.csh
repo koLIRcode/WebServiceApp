@@ -8,7 +8,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/kolir/work/CODE/EVO_PythonLab-22/WebService/WebService_app/virt"
+setenv VIRTUAL_ENV "/kolir/work/CODE/GitHub_projects/WebService_app/virt"
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"

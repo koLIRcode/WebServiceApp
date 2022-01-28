@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/kolir/work/CODE/EVO_PythonLab-22/WebService/WebService_app/virt"
+set -gx VIRTUAL_ENV "/kolir/work/CODE/GitHub_projects/WebService_app/virt"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
